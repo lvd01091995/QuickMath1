@@ -34,8 +34,8 @@ cc.Class({
         //         this._bar = value;
         //     }
         // },
-        spProgress: cc.Sprite,
-        lbGame: cc.Label
+
+        prefabGame: cc.Prefab
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -52,20 +52,14 @@ cc.Class({
         this.caculer1 = "+";
         this.caculer2 = "";
         this.is3Num = false;
+        this.result = "";
+        this.arrIndexHide = [0, 1, 2, 5];
+        this.arrIndexHide2 = [0, 1, 2, 3, 4, 5];
     },
     setInfo: function setInfo() {},
     getRandomQuesiton: function getRandomQuesiton() {
         var str = "";
-        this.num1 = this.getRandomNum();
-        this.num2 = this.getRandomNum();
-        this.caculer1 = this.getRandomCaculer();
-        if (this.check3Num()) {
-            this.num3 = this.getRandomNum();
-            this.caculer2 = this.getRandomCaculer();
-        } else {
-            this.num3 = "";
-            this.caculer2 = "";
-        }
+
         str = this.num1 + this.caculer1 + this.num2 + this.caculer2 + this.num3;
         return str;
     },
@@ -122,6 +116,7 @@ cc.Class({
     //     console.log("== " + this._tiemCurrent);
     //     this.spProgress.fillRange = this._tiemCurrent/this._timeTotal;
     //     this._tiemCurrent-= dt;
+
     // },
     updateLever: function updateLever() {},
 
@@ -139,9 +134,25 @@ cc.Class({
     //     }
     // },
     checkReslute: function checkReslute() {
-        var str = this.getRandomQuesiton();
-        this.lbGame.string = str + "=" + eval(str);
-        this._currentLv++;
+        var obj = {};
+        obj.num1 = this.getRandomNum();
+        obj.num2 = this.getRandomNum();
+        obj.caculer1 = this.getRandomCaculer();
+        if (this.check3Num()) {
+            obj.num3 = this.getRandomNum();
+            obj.caculer2 = this.getRandomCaculer();
+            obj.indexHide = this.arrIndexHide2[this.generateRandomNumber(0, this.arrIndexHide2.length)];
+        } else {
+            obj.num3 = "";
+            obj.caculer2 = "";
+            obj.indexHide = this.arrIndexHide[this.generateRandomNumber(0, this.arrIndexHide.length)];
+        }
+
+        obj.indexHide = 1;
+        obj.result = eval(obj.num1 + obj.caculer1 + obj.num2 + obj.caculer2 + obj.num3);
+        var item = cc.instantiate(this.prefabGame).getComponent("QuickSmath");
+        item.setInfo(obj);
+        this.node.addChild(item.node);
     }
 });
 

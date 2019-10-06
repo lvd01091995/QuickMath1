@@ -1,54 +1,218 @@
-2019-10-06T12:44:09.317Z - normal: Load ~/.CocosCreator/settings.json
-2019-10-06T12:44:09.321Z - normal: checking language setting...
-2019-10-06T12:44:09.321Z - normal: Language: en
-2019-10-06T12:44:09.976Z - success: protocol editor-framework registered
-2019-10-06T12:44:09.976Z - success: protocol app registered
-2019-10-06T12:44:09.977Z - success: protocol theme registered
-2019-10-06T12:44:09.977Z - success: protocol packages registered
-2019-10-06T12:44:09.978Z - success: protocol unpack registerred
-2019-10-06T12:44:09.978Z - success: protocol disable-commonjs registerred
-2019-10-06T12:44:10.589Z - normal: connected!
-2019-10-06T12:44:10.591Z - normal: Check project /Users/minhhien/hien/Work/Unity/QuickMath1
-2019-10-06T12:44:10.593Z - normal: Initializing project /Users/minhhien/hien/Work/Unity/QuickMath1
-2019-10-06T12:44:10.595Z - normal: Initializing Cocos2d
-2019-10-06T12:44:10.962Z - normal: Initializing Asset Database
-2019-10-06T12:44:10.995Z - success: protocol uuid registerred
-2019-10-06T12:44:10.995Z - success: protocol db registerred
-2019-10-06T12:44:10.995Z - success: protocol thumbnail registerred
-2019-10-06T12:44:10.995Z - normal: Loading editor/builtin packages
-2019-10-06T12:44:11.166Z - success: assets loaded
-2019-10-06T12:44:11.176Z - success: builder loaded
-2019-10-06T12:44:11.178Z - success: cocos-analytics loaded
-2019-10-06T12:44:11.182Z - success: console loaded
-2019-10-06T12:44:11.240Z - success: fb-instant-games loaded
-2019-10-06T12:44:11.250Z - success: hierarchy loaded
-2019-10-06T12:44:11.266Z - success: inspector loaded
-2019-10-06T12:44:11.268Z - success: keystore loaded
-2019-10-06T12:44:11.275Z - success: node-library loaded
-2019-10-06T12:44:11.278Z - success: package-asset loaded
-2019-10-06T12:44:11.280Z - success: preferences loaded
-2019-10-06T12:44:11.283Z - success: project-exporter loaded
-2019-10-06T12:44:11.310Z - success: project-importer loaded
-2019-10-06T12:44:11.313Z - success: project-settings loaded
-2019-10-06T12:44:11.321Z - success: ui-kit loaded
-2019-10-06T12:44:11.328Z - success: scene loaded
-2019-10-06T12:44:11.329Z - success: sprite-editor loaded
-2019-10-06T12:44:11.333Z - success: store loaded
-2019-10-06T12:44:11.341Z - success: timeline loaded
-2019-10-06T12:44:11.342Z - normal: Loading builtin packages
-2019-10-06T12:44:11.347Z - success: asset-db-debugger loaded
-2019-10-06T12:44:11.348Z - success: color-picker loaded
-2019-10-06T12:44:11.348Z - success: jsb-adapter loaded
-2019-10-06T12:44:11.353Z - success: package-manager loaded
-2019-10-06T12:44:11.354Z - success: qqplay-adapter loaded
-2019-10-06T12:44:11.360Z - success: sdkbox loaded
-2019-10-06T12:44:11.366Z - success: tester loaded
-2019-10-06T12:44:11.372Z - success: ui-grid loaded
-2019-10-06T12:44:11.375Z - success: ui-kit-preview-extra loaded
-2019-10-06T12:44:11.379Z - success: ui-kit-preview loaded
-2019-10-06T12:44:11.383Z - success: ui-tree loaded
-2019-10-06T12:44:11.384Z - success: weapp-adapter loaded
-2019-10-06T12:44:12.431Z - normal: Loading packages
-2019-10-06T12:44:12.440Z - normal: Watching packages
-2019-10-06T12:44:12.531Z - normal: Run Application
-2019-10-06T12:44:13.493Z - success: preview server running at http://localhost:7456
+2019-10-06T13:03:52.643Z - normal: Load ~/.CocosCreator/settings.json
+2019-10-06T13:03:52.648Z - normal: checking language setting...
+2019-10-06T13:03:52.648Z - normal: Language: en
+2019-10-06T13:03:54.328Z - success: protocol editor-framework registered
+2019-10-06T13:03:54.328Z - success: protocol app registered
+2019-10-06T13:03:54.328Z - success: protocol theme registered
+2019-10-06T13:03:54.328Z - success: protocol packages registered
+2019-10-06T13:03:54.329Z - success: protocol unpack registerred
+2019-10-06T13:03:54.329Z - success: protocol disable-commonjs registerred
+2019-10-06T13:03:56.267Z - normal: connected!
+2019-10-06T13:03:56.268Z - normal: Check project E:\Quickmath2
+2019-10-06T13:03:56.269Z - normal: Initializing project E:\Quickmath2
+2019-10-06T13:03:56.276Z - normal: Initializing Cocos2d
+2019-10-06T13:03:57.686Z - normal: Initializing Asset Database
+2019-10-06T13:03:57.720Z - success: protocol uuid registerred
+2019-10-06T13:03:57.720Z - success: protocol db registerred
+2019-10-06T13:03:57.720Z - success: protocol thumbnail registerred
+2019-10-06T13:03:57.720Z - normal: Loading editor/builtin packages
+2019-10-06T13:03:57.871Z - success: assets loaded
+2019-10-06T13:03:57.873Z - success: builder loaded
+2019-10-06T13:03:57.875Z - success: cocos-analytics loaded
+2019-10-06T13:03:57.878Z - success: console loaded
+2019-10-06T13:03:57.916Z - success: fb-instant-games loaded
+2019-10-06T13:03:57.921Z - success: hierarchy loaded
+2019-10-06T13:03:57.925Z - success: inspector loaded
+2019-10-06T13:03:57.927Z - success: keystore loaded
+2019-10-06T13:03:57.932Z - success: node-library loaded
+2019-10-06T13:03:57.937Z - success: package-asset loaded
+2019-10-06T13:03:57.939Z - success: preferences loaded
+2019-10-06T13:03:57.940Z - success: project-exporter loaded
+2019-10-06T13:03:57.956Z - success: project-importer loaded
+2019-10-06T13:03:57.958Z - success: project-settings loaded
+2019-10-06T13:03:57.961Z - success: ui-kit loaded
+2019-10-06T13:03:57.966Z - success: scene loaded
+2019-10-06T13:03:57.968Z - success: sprite-editor loaded
+2019-10-06T13:03:57.971Z - success: store loaded
+2019-10-06T13:03:57.975Z - success: timeline loaded
+2019-10-06T13:03:57.975Z - normal: Loading builtin packages
+2019-10-06T13:03:57.988Z - success: asset-db-debugger loaded
+2019-10-06T13:03:58.000Z - success: code-editor loaded
+2019-10-06T13:03:58.004Z - success: color-picker loaded
+2019-10-06T13:03:58.014Z - success: package-manager loaded
+2019-10-06T13:03:58.020Z - success: qqplay-adapter loaded
+2019-10-06T13:03:58.197Z - success: sdkbox loaded
+2019-10-06T13:03:58.213Z - success: tester loaded
+2019-10-06T13:03:58.226Z - success: ui-grid loaded
+2019-10-06T13:03:58.236Z - success: ui-kit-preview-extra loaded
+2019-10-06T13:03:58.248Z - success: ui-kit-preview loaded
+2019-10-06T13:03:58.258Z - success: ui-tree loaded
+2019-10-06T13:03:58.263Z - success: weapp-adapter loaded
+2019-10-06T13:03:59.612Z - normal: Loading packages
+2019-10-06T13:03:59.623Z - normal: Watching packages
+2019-10-06T13:04:00.159Z - normal: Run Application
+2019-10-06T13:04:02.888Z - success: preview server running at http://localhost:7456
+2019-10-06T13:04:09.664Z - error: Failed to remove menu in path: Developer/UI Preview/ui-tree (could not be found)
+    at Menu.remove (C:\CocosCreator1.10.2\resources\app.asar\editor-framework\lib\main\menu.js:1:2594)
+    at Object.MainMenu.remove (C:\CocosCreator1.10.2\resources\app.asar\editor-framework\lib\main\main-menu.js:1:4485)
+    at Async.series.a (C:\CocosCreator1.10.2\resources\app.asar\editor-framework\lib\main\package.js:1:5122)
+    at C:\CocosCreator1.10.2\resources\app.asar\node_modules\async\lib\async.js:718:13
+    at Immediate.iterate (C:\CocosCreator1.10.2\resources\app.asar\node_modules\async\lib\async.js:262:13)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+2019-10-06T13:04:09.665Z - success: ui-tree unloaded
+2019-10-06T13:04:09.667Z - error: Failed to remove menu in path: Developer/UI Preview/ui-tree (could not be found)
+    at Menu.remove (C:\CocosCreator1.10.2\resources\app.asar\editor-framework\lib\main\menu.js:1:2594)
+    at Object.MainMenu.remove (C:\CocosCreator1.10.2\resources\app.asar\editor-framework\lib\main\main-menu.js:1:4485)
+    at Async.series.a (C:\CocosCreator1.10.2\resources\app.asar\editor-framework\lib\main\package.js:1:5122)
+    at C:\CocosCreator1.10.2\resources\app.asar\node_modules\async\lib\async.js:718:13
+    at Immediate.iterate (C:\CocosCreator1.10.2\resources\app.asar\node_modules\async\lib\async.js:262:13)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+2019-10-06T13:04:09.667Z - failed: Failed to uncache module main.js: Cannot find it.
+2019-10-06T13:04:09.668Z - success: ui-tree unloaded
+2019-10-06T13:04:09.678Z - failed: Failed to load panel "panel.preview" from "ui-tree", the panelID ui-tree.preview already exists
+2019-10-06T13:04:09.680Z - success: ui-tree loaded
+2019-10-06T13:04:09.680Z - success: ui-tree loaded
+2019-10-06T13:28:52.543Z - failed: [db-task][sync-changes] Failed to import asset E:\Quickmath2\assets\Scripts\QuickSmath.js, message: Compile error: SyntaxError: E:/Quickmath2/assets/Scripts/QuickSmath.js: Unexpected token (57:8)
+  55 |         this.indexHide = obj.indexHide;
+  56 |         let str = 
+> 57 |         switch(this.indexHide){
+     |         ^
+  58 |             case 0 :
+  59 |                 this.lb.string =  "?"
+  60 |             break;
+    at Parser.pp$5.raise (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp$3.parseExprAtom (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3750:12)
+    at Parser.pp$3.parseExprSubscripts (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+    at Parser.pp$1.parseVar (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:2340:24)
+    at Parser.pp$1.parseVarStatement (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:2169:8)
+2019-10-06T13:32:39.777Z - failed: [db-task][sync-changes] Failed to import asset E:\Quickmath2\assets\Scripts\QuickSmath.js, message: Compile error: SyntaxError: E:/Quickmath2/assets/Scripts/QuickSmath.js: Unexpected token, expected , (100:5)
+   98 |     }
+   99 | 
+> 100 |      update (dt) {},
+      |      ^
+  101 | });
+  102 | 
+    at Parser.pp$5.raise (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp.expect (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
+    at Parser.pp$3.parseObj (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3978:12)
+    at Parser.pp$3.parseExprAtom (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3719:19)
+    at Parser.pp$3.parseExprSubscripts (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+2019-10-06T13:35:06.529Z - failed: [db-task][sync-changes] Failed to import asset E:\Quickmath2\assets\Scripts\QuickSmath.js, message: Compile error: SyntaxError: E:/Quickmath2/assets/Scripts/QuickSmath.js: Unexpected token, expected , (103:5)
+  101 |     }
+  102 | 
+> 103 |      update (dt) {},
+      |      ^
+  104 | });
+  105 | 
+    at Parser.pp$5.raise (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp.expect (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
+    at Parser.pp$3.parseObj (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3978:12)
+    at Parser.pp$3.parseExprAtom (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3719:19)
+    at Parser.pp$3.parseExprSubscripts (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+2019-10-06T14:06:24.271Z - failed: [db-task][sync-changes] Failed to import asset E:\Quickmath2\assets\Scripts\QuickSmath.js, message: Compile error: SyntaxError: E:/Quickmath2/assets/Scripts/QuickSmath.js: Unexpected token, expected , (174:0)
+  172 |      
+  173 | //da = 0; 
+> 174 | i = 1;
+      | ^
+  175 | 
+  176 |      
+  177 | });
+    at Parser.pp$5.raise (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp.expect (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
+    at Parser.pp$3.parseObj (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3978:12)
+    at Parser.pp$3.parseExprAtom (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3719:19)
+    at Parser.pp$3.parseExprSubscripts (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (C:\CocosCreator1.10.2\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+2019-10-06T14:10:39.572Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T14:10:39.574Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T14:11:32.883Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T14:11:39.396Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T14:43:54.608Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T14:43:54.609Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T14:43:54.610Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T14:44:11.941Z - warn: The Sprite referenced by component "GameView" is invalid. Detailed information:
+Node path: "Canvas"
+
+2019-10-06T14:44:11.942Z - warn: The Label referenced by component "cc.Sprite" is invalid. Detailed information:
+Node path: "GameView/slider_green"
+
+2019-10-06T14:58:13.132Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T14:58:13.134Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T14:58:13.135Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T14:58:43.283Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T14:58:43.283Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T14:58:43.284Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:00:14.304Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:00:14.306Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:00:14.308Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:01:37.004Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:01:37.005Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:01:37.005Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:03:11.380Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:03:11.382Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:03:11.382Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:03:43.203Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:03:43.203Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:03:43.203Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:04:30.645Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:04:30.645Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:04:30.646Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:05:47.192Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:05:47.193Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:05:47.193Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:06:19.145Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:06:19.145Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:06:19.145Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:07:45.650Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:07:45.651Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:07:45.651Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:08:37.102Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:08:37.102Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:08:37.103Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:09:15.193Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:09:15.194Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:09:15.196Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:09:40.914Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:09:40.915Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:09:40.915Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:10:11.003Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:10:11.003Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:10:11.003Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:11:04.307Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:11:04.308Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:11:04.308Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:11:47.534Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:11:47.534Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:11:47.535Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:12:26.169Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:12:26.169Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:12:26.169Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:13:18.753Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:13:18.754Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:13:18.755Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:14:01.898Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:14:01.898Z - normal: ScaleX != ScaleY. Don't know which one to return
+2019-10-06T15:14:01.899Z - normal: ScaleX != ScaleY. Don't know which one to return

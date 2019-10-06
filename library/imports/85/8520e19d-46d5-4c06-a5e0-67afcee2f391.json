@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "panel_orange_small",
+    "texture": "4bda1bd0-8cf1-4dd3-bd3d-89c965ec0cb2",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      342,
+      83
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      342,
+      84
+    ],
+    "capInsets": [
+      24,
+      23,
+      36,
+      35
+    ]
+  }
+}

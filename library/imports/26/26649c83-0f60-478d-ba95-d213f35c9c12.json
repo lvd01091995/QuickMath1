@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pngtree-math-calculations-png-image_779805",
+    "texture": "082793c3-39b0-4d2c-9538-d79166545a84",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      640,
+      640
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      640,
+      640
+    ]
+  }
+}
