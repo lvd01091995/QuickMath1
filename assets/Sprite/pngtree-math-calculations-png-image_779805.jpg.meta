@@ -1,0 +1,30 @@
+{
+  "ver": "2.0.0",
+  "uuid": "082793c3-39b0-4d2c-9538-d79166545a84",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "pngtree-math-calculations-png-image_779805": {
+      "ver": "1.0.3",
+      "uuid": "26649c83-0f60-478d-ba95-d213f35c9c12",
+      "rawTextureUuid": "082793c3-39b0-4d2c-9538-d79166545a84",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 640,
+      "height": 640,
+      "rawWidth": 640,
+      "rawHeight": 640,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
