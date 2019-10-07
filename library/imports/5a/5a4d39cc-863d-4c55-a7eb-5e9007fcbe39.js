@@ -149,6 +149,7 @@ cc.Class({
         }
 
         obj.indexHide = 1;
+
         obj.result = eval(obj.num1 + obj.caculer1 + obj.num2 + obj.caculer2 + obj.num3);
         var item = cc.instantiate(this.prefabGame).getComponent("QuickSmath");
         item.setInfo(obj);

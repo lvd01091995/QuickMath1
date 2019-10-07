@@ -121,6 +121,17 @@ cc.Class({
     // },
     updateLever(){
     },
+    getIndexHide(){
+        let index = 0;
+        if(this._currentLv < 10) 
+        return this.arrIndexHide.length;
+        if(this.is3Num){
+            index =  this.arrIndexHide2[this.generateRandomNumber(0,this.arrIndexHide2.length)];
+        }else{
+            index =  this.arrIndexHide[this.generateRandomNumber(0,this.arrIndexHide.length)];
+        }
+        return index
+    },
     // onClickTest(event , data){
     //     switch (data){
     //         case "0":
@@ -142,15 +153,14 @@ cc.Class({
         if(this.check3Num()){
             obj.num3 = this.getRandomNum();
             obj.caculer2 = this.getRandomCaculer();
-            obj.indexHide =  this.arrIndexHide2[this.generateRandomNumber(0,this.arrIndexHide2.length)];
-            
+            this.is3Num = true;
         }else{
             obj.num3 = "";
             obj.caculer2 = "";
-            obj.indexHide = this.arrIndexHide[this.generateRandomNumber(0,this.arrIndexHide.length)];
+            this.is3Num = false;
         }
 
-        obj.indexHide =1;
+        obj.indexHide = this.getIndexHide();
         
         obj.result = eval(obj.num1 + obj.caculer1 + obj.num2 + obj.caculer2 + obj.num3);
         let item = cc.instantiate(this.prefabGame).getComponent("QuickSmath");
