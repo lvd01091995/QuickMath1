@@ -4,39 +4,18 @@ cc._RF.push(module, '35405RGYx5BVYxduXe/5JDl', 'QuickSmath');
 
 "use strict";
 
-// Learn cc.Class:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
-// Learn Attribute:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
-
+var SPEED_MOVE_VIEW = 0.2;
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
         lb: cc.Label,
         lbButon: [cc.Label],
         spCountDown: cc.Sprite,
-        isStart: false
+        isStart: false,
+        list_Bkg: [cc.SpriteFrame],
+        bkg: cc.Sprite,
+        lb_Score: cc.Label
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -51,10 +30,18 @@ cc.Class({
         this.indexHide = 0;
         this.current = 8;
         this.totlTime = 8;
-
         this.isThreeAnswer = true;
+        this.node.position = cc.v2(cc.winSize.width, 0);
+        this.posCenter = cc.v2(0, 0);
+        this.posRight = cc.v2(cc.winSize.width, 0);
+        this.posLeft = cc.v2(-cc.winSize.width, 0);
+        this.setRandomBkg();
+        this.GameView = this.node.parent.getComponent("GameView");
+        this.lb_Score.string = this.GameView.score;
     },
-    start: function start() {},
+    start: function start() {
+        this.moveIn();
+    },
     setInfo: function setInfo(obj) {
         this.num1 = obj.num1;
         this.num2 = obj.num2;
@@ -67,29 +54,29 @@ cc.Class({
 
         switch (this.indexHide) {
             case 0:
-                this.lb.string = "?" + this.caculer1 + this.num2 + this.caculer2 + this.num3 + "=" + this.result;
+                this.lb.string = "?" + " " + this.caculer1 + " " + this.num2 + " " + this.caculer2 + " " + this.num3 + " = " + this.result;
                 this.numHide = this.num1;
                 break;
             case 1:
-                this.lb.string = this.num1 + "?" + this.num2 + this.caculer2 + this.num3 + "=" + this.result;
+                this.lb.string = this.num1 + " " + "?" + " " + this.num2 + " " + this.caculer2 + " " + this.num3 + "=" + " " + this.result;
                 this.numHide = this.caculer1;
                 console.log("cacule la==1 " + this.numHide);
                 break;
             case 2:
-                this.lb.string = this.num1 + this.caculer1 + "?" + this.caculer2 + this.num3 + "=" + this.result;
+                this.lb.string = this.num1 + " " + this.caculer1 + " " + "?" + " " + this.caculer2 + " " + this.num3 + " = " + this.result;
                 this.numHide = this.num2;
 
                 break;
             case 3:
-                this.lb.string = this.num1 + this.caculer1 + this.num2 + "?" + this.num3 + "=" + this.result;
+                this.lb.string = this.num1 + " " + this.caculer1 + " " + this.num2 + " " + "?" + " " + this.num3 + " = " + this.result;
                 this.numHide = this.this.caculer2;
                 break;
             case 4:
-                this.lb.string = this.num1 + this.caculer1 + this.num2 + this.caculer2 + "?" + "=" + this.result;
+                this.lb.string = this.num1 + " " + this.caculer1 + " " + this.num2 + " " + this.caculer2 + " " + "?" + " = " + this.result;
                 this.numHide = this.num3;
                 break;
             case 5:
-                this.lb.string = this.num1 + this.caculer1 + this.num2 + this.caculer2 + this.num3 + "=" + "?";
+                this.lb.string = this.num1 + " " + this.caculer1 + " " + this.num2 + " " + this.caculer2 + " " + this.num3 + " = " + " ?";
                 this.numHide = this.result;
                 break;
             default:
@@ -100,7 +87,6 @@ cc.Class({
         // this.isThreeAnswer = true;
         if (!this.isThreeAnswer) this.lbButon[2].node.parent.active = false;
         this.setInfoBtn();
-        this.isStart = true;
     },
     getResult: function getResult(str) {
         eval(str);
@@ -133,9 +119,17 @@ cc.Class({
     },
     isFinish: function isFinish() {
         console.log("dung roi");
+        this.moveOut();
+        this.GameView.score++;
+        this.GameView.checkReslute();
     },
     isFail: function isFail() {
         console.log("sai roi");
+        if (this.GameView.score > this.GameView.bestScore) {
+            this.GameView.bestScore = this.GameView.score;
+            cc.sys.localStorage.setItem("bestscore", this.GameView.bestScore);
+        }
+        this.GameView.onLose();
     },
     update: function update(dt) {
 
@@ -150,8 +144,20 @@ cc.Class({
             }
         }
     },
-    moveOut: function moveOut() {},
-    moveIn: function moveIn() {},
+    moveOut: function moveOut() {
+        var _this = this;
+
+        this.node.runAction(cc.sequence(cc.moveTo(SPEED_MOVE_VIEW, this.posLeft), cc.callFunc(function () {
+            _this.node.destroy();
+        })));
+    },
+    moveIn: function moveIn() {
+        var _this2 = this;
+
+        this.node.runAction(cc.sequence(cc.moveTo(SPEED_MOVE_VIEW, this.posCenter), cc.callFunc(function () {
+            _this2.isStart = true;
+        })));
+    },
     setInfoBtn: function setInfoBtn() {
         if (!this.isThreeAnswer) {
             var rdTemp = this.generateRandomNumber(0, 2);
@@ -189,6 +195,10 @@ cc.Class({
             }
         }
         return item;
+    },
+    setRandomBkg: function setRandomBkg() {
+        var index = this.generateRandomNumber(0, 5);
+        this.bkg.spriteFrame = this.list_Bkg[index];
     }
     // i = 0;
 
