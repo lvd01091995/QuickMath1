@@ -35,11 +35,10 @@ var GameView = cc.Class({
         this.posLeft = cc.v2(-cc.winSize.width, 0);
         this.score = 0;
         this.curQuestionView = null;
-    },
-    start() {
         this.bestScore= cc.sys.localStorage.getItem("bestscore");
         if(this.bestScore==null || typeof this.bestScore ==="undefined") this.bestScore=0;
     },
+  
     setInfo() {
 
     },
@@ -68,20 +67,20 @@ var GameView = cc.Class({
 
     },
     check3Num() {
-        if (this._currentLv < 10) return false;
+        if (this._currentLv < 6) return false;
         let temp = this.getHardLevel();
         if (temp > this.generateRandomNumber(0, 10)) return true;
         return false
 
     },
     getHardLevel() {
-        if (this._currentLv < 20) {
+        if (this._currentLv < 15) {
             return 2;
-        } else if (this._currentLv < 25) {
+        } else if (this._currentLv < 20) {
             return 3;
-        } else if (this._currentLv < 30) {
+        } else if (this._currentLv < 25) {
             return 4;
-        } else if (this._currentLv < 35) {
+        } else if (this._currentLv < 30) {
             return 6;
         } else {
             return 8;
@@ -91,15 +90,10 @@ var GameView = cc.Class({
         return this.arrCaculer[this.generateRandomNumber(0, 2)];
     },
     onClickTest() {
-        console.log("gia tri str la== " + this.getRandomQuesiton());
         this.lbGame.string = this.getRandomQuesiton();
         this._currentLv++;
     },
-    checkCaculer() {
-        if (this._currentLv > 9) {
-
-        }
-    },
+   
     // update (dt) {
     //     console.log("== " + this._tiemCurrent);
     //     this.spProgress.fillRange = this._tiemCurrent/this._timeTotal;
@@ -110,8 +104,8 @@ var GameView = cc.Class({
     },
     getIndexHide(){
         let index = 0;
-        if(this._currentLv < 10) 
-        return this.arrIndexHide.length;
+        if(this._currentLv < 8) 
+        return 5;
         if(this.is3Num){
             index =  this.arrIndexHide2[this.generateRandomNumber(0,this.arrIndexHide2.length)];
         }else{
@@ -119,19 +113,7 @@ var GameView = cc.Class({
         }
         return index
     },
-    // onClickTest(event , data){
-    //     switch (data){
-    //         case "0":
-
-    //         break;
-    //         case "1":
-    //         break;
-    //         case "2":
-    //         break;
-    //         case "3":
-    //         break;
-    //     }
-    // },
+   
     checkReslute() {
         let obj = {};
         obj.num1 = this.getRandomNum();
@@ -148,12 +130,13 @@ var GameView = cc.Class({
         }
 
         obj.indexHide = this.getIndexHide();
-        
+            console.log("index hide la== " + obj.indexHide);
 
         obj.result = eval(obj.num1 + obj.caculer1 + obj.num2 + obj.caculer2 + obj.num3);
         this.result=obj.num1 + obj.caculer1 + obj.num2 + obj.caculer2 + obj.num3+" = "+ obj.result;
         let item = cc.instantiate(this.prefabGame).getComponent("QuickSmath");
         item.setInfo(obj);
+        item.GameView = this;
         this.node.addChild(item.node);
         this.curQuestionView = item;
         this.startView.getComponent("StartView").moveLeft();

@@ -28,15 +28,13 @@ cc.Class({
         this.caculer2 = "";
         this.result = "";
         this.indexHide = 0;
-        this.current = 8;
-        this.totlTime = 8;
-        this.isThreeAnswer = true;
+        this.current = 6;
+        this.totlTime = 6;
         this.node.position = cc.v2(cc.winSize.width, 0);
         this.posCenter = cc.v2(0, 0);
         this.posRight = cc.v2(cc.winSize.width, 0);
         this.posLeft = cc.v2(-cc.winSize.width, 0);
         this.setRandomBkg();
-        this.GameView = this.node.parent.getComponent("GameView");
         this.lb_Score.string = this.GameView.score;
     },
     start: function start() {
@@ -50,6 +48,7 @@ cc.Class({
         this.caculer2 = obj.caculer2;
         this.result = obj.result;
         this.indexHide = obj.indexHide;
+        this.isThreeAnswer = true;
         if (this.indexHide == 1 || this.indexHide == 3) this.isThreeAnswer = false;
 
         switch (this.indexHide) {
@@ -118,17 +117,17 @@ cc.Class({
         this.isFail();
     },
     isFinish: function isFinish() {
-        console.log("dung roi");
         this.moveOut();
         this.GameView.score++;
+        this.GameView._currentLv++;
         this.GameView.checkReslute();
     },
     isFail: function isFail() {
-        console.log("sai roi");
         if (this.GameView.score > this.GameView.bestScore) {
             this.GameView.bestScore = this.GameView.score;
             cc.sys.localStorage.setItem("bestscore", this.GameView.bestScore);
         }
+        this.GameView._currentLv = 0;
         this.GameView.onLose();
     },
     update: function update(dt) {
